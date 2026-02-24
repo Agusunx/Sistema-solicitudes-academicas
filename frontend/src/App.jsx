@@ -5,7 +5,7 @@ import ListadoSolicitudes from "./ListadoSolicitudes.jsx";
 import ChatAsistente from "./ChatAsistente.jsx";
 import "./App.css";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 // Descripción breve de cada tipo de solicitud
 const TIPO_DESCRIPCIONES = {
